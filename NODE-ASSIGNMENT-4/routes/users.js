@@ -14,7 +14,6 @@ router.post('/users', (req, res, next) => {
 });
 
 router.get('/users', (req, res, next) => {
-    console.log(users);
     res.render('display-user', { docTitle: 'Users', users: users });
 });
 
